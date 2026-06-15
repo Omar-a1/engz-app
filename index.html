@@ -4,106 +4,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezgz app - نظم وقتك بذكاء</title>
-    <link rel="stylesheet" href="engz.css">
+    <title>تطبيق إنجز (ENGZ) - نظم وقتك بذكاء وضاعف تركيزك</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="تطبيق إنجز (ENGZ) هو الأداة المثالية لتنظيم مهامك اليومية، زيادة تركيزك والتخلص من المشتتات بأساليب علمية حديثة. متوفر الآن للهواتف الذكية.">
+    <meta name="keywords" content="تنظيم الوقت, زيادة التركيز, إنتاجية, بومودورو, إدارة المهام, تطبيق إنجز, portfolio">
+    <meta name="author" content="ENGZ Team">
+
+    <!-- Google Fonts: Cairo (Arabic) & Poppins (English) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="title">
-            <h1>نظم وقتك بذكاء! وضاعف تركيزك</h1>
+    <!-- Header / Responsive Glassmorphic Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="logo.png" alt="شعار إنجز" class="nav-logo">
+                <span class="nav-title">إنجز</span>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">الرئيسية</a>
+                <a href="#features" class="nav-link">المميزات</a>
+                <a href="#projects" class="nav-link">مشاريع التطبيق</a>
+                <a href="#reviews" class="nav-link">آراء المستخدمين</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="#download-section" class="cta-btn" id="navbarCtaBtn">تحميل الآن</a>
+            </div>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="فتح قائمة التنقل">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+    </header>
 
-        <!-- Features Section -->
-        <div class="features-container">
-            <div class="feature-card">
-                <div class="feature-icon">📅</div>
-                <h3>تنظيم المهام</h3>
-                <p>جدول يومك بذكاء ورتب أولوياتك بسهولة</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>زيادة التركيز</h3>
-                <p>تقنيات متطورة تساعدك على التخلص من المشتتات</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>تقارير الأداء</h3>
-                <p>تابع تطورك اليومي والأسبوعي بإحصائيات دقيقة</p>
-            </div>
-        </div>
-        <p>تطبيق لمساعدتك على تنظيم وقتك زيادة انتاجيتك
-            <br>
-            حمله الأن !
-        </p>
-        <!-- Download Section with Logo and Buttons -->
-        <div class="download-section">
-            <div class="logo-wrapper">
-                <img src="logo.png" alt="ENGZ Logo" class="app-logo">
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-bolt"></i> خيارك الأول للإنتاجية</span>
+                    <h1>نظم وقتك بذكاء! وضاعف تركيزك</h1>
+                    <p class="promo-text">
+                        تطبيق متكامل مصمم خصيصاً لمساعدتك على تنظيم مهامك اليومية، التخلص من المشتتات، ومتابعة أدائك بإحصائيات دقيقة وفق مناهج علمية متطورة.
+                    </p>
+                    
+                    <!-- Store Badges Container -->
+                    <div class="download-buttons" id="download-section">
+                        <!-- App Store Badge -->
+                        <a href="https://apps.apple.com/us/app/ezgz/id6764602952" class="store-btn" id="appStoreBtn" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-apple btn-icon-fa"></i>
+                            <div class="btn-text">
+                                <span class="btn-desc">Download on the</span>
+                                <span class="btn-title">App Store</span>
+                            </div>
+                        </a>
 
-            </div>
-
-            <div id="links">
-                <!-- App Store Badge -->
-                <a href="https://apps.apple.com/us/app/ezgz/id6764602952" class="store-btn" target="_blank"
-                    rel="noopener noreferrer">
-                    <svg class="btn-logo" viewBox="0 0 170 170" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.37.13-9.13-1.9-14.3-6.08-3.48-2.83-7.23-7.44-11.23-13.83-8.62-13.79-14.07-27.87-16.37-42.24-2.29-14.36-1.35-27.17 2.82-38.41 4.28-11.53 11-20.6 20.16-27.22 9.17-6.61 19.34-10.02 30.52-10.24 4.58 0 9.77 1.22 15.54 3.65 5.78 2.44 9.68 3.65 11.71 3.65 1.8 0 5.41-.95 10.83-2.84 5.41-1.88 10.32-2.73 14.73-2.54 16 .9 28.53 7.07 37.58 18.52-13.63 8.27-20.22 19.55-19.78 33.82.44 10.74 4.5 19.51 12.18 26.31 7.69 6.79 16.73 10.42 27.15 10.88-2.25 6.74-5.63 13.91-10.14 21.52zm-18.77-98.81c0 8.08-3 15.35-9.01 21.83-6 6.47-13.12 10.22-21.36 11.24.11-1.6.17-2.9.17-3.9 0-7.85 3.05-15.11 9.16-21.79 6.11-6.68 13.33-10.42 21.64-11.24.11 1.25.17 2.47.17 3.66z" />
-                    </svg>
-                    <div class="btn-text">
-                        <span class="btn-desc">Download on the</span>
-                        <span class="btn-title">App Store</span>
+                        <!-- Google Play Badge -->
+                        <a href="https://play.google.com/store/apps/details?id=com.engz.ezgz&pli=1" class="store-btn" id="googlePlayBtn" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-google-play btn-icon-fa"></i>
+                            <div class="btn-text">
+                                <span class="btn-desc">GET IT ON</span>
+                                <span class="btn-title">Google Play</span>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
 
-                <!-- Google Play Badge -->
-                <a href="https://play.google.com/store/apps/details?id=com.engz.ezgz&pli=1" class="store-btn"
-                    target="_blank" rel="noopener noreferrer">
-                    <svg class="btn-logo" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M3 5.27v13.46c0 .82.47 1.57 1.21 1.93l7.9-7.9L4.21 3.34c-.74.36-1.21 1.11-1.21 1.93zM16.03 12L4.92 20.89c.35.17.75.24 1.15.19.49-.06.94-.3 1.27-.68l8.69-8.4L16.03 12zM17 11.05l-8.69-8.4c-.33-.38-.78-.62-1.27-.68-.4-.05-.8.02-1.15.19L17 11.05zm5.79.16c.42.36.42.94 0 1.3l-5.04 4.88L16.5 12l1.25-5.39 5.04 4.88z" />
-                    </svg>
-                    <div class="btn-text">
-                        <span class="btn-desc">GET IT ON</span>
-                        <span class="btn-title">Google Play</span>
+                <!-- Hero Graphic Showcase -->
+                <div class="hero-graphic">
+                    <div class="logo-wrapper">
+                        <img src="logo.png" alt="شعار تطبيق إنجز الكبير" class="app-logo">
                     </div>
+                    <div class="hero-stats">
+                        <div class="stat-badge">
+                            <i class="fas fa-star text-gold"></i>
+                            <span>4.9 / 5 تقييم</span>
+                        </div>
+                        <div class="stat-badge">
+                            <i class="fas fa-download text-primary"></i>
+                            <span>+10K تحميل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </a>
+        <!-- Services / Features Section -->
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <span class="section-subtitle">كيف نساعدك؟</span>
+                <h2 class="section-title">المميزات والخدمات الرئيسية</h2>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3>تنظيم المهام</h3>
+                    <p>جدول يومك بذكاء ورتب أولوياتك بسهولة تامة وبخطوات تفاعلية.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-hourglass-start"></i>
+                    </div>
+                    <h3>زيادة التركيز</h3>
+                    <p>تقنيات متطورة مثل مؤقت بومودورو تساعدك على التخلص من المشتتات والعمل بكفاءة.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>تقارير الأداء</h3>
+                    <p>تابع تطورك اليومي والأسبوعي بإحصائيات دقيقة ورسوم بيانية ذكية.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <span class="section-subtitle">معرض العمل والواجهات</span>
+                <h2 class="section-title">وحدات ومشاريع التطبيق الفرعية</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <i class="fa-solid fa-list-check project-icon-lg"></i>
+                        <span class="project-badge">قاعدة البيانات</span>
+                    </div>
+                    <div class="project-details">
+                        <h3>لوحة تخطيط المهام والجدولة</h3>
+                        <p>نظام ذكي لجدولة المهام اليومية مع إمكانية الترتيب حسب الأولويات وتنبيهات مخصصة.</p>
+                        <div class="project-tags">
+                            <span class="tag">SwiftUI</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">RoomDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <i class="fa-solid fa-stopwatch project-icon-lg"></i>
+                        <span class="project-badge">أدوات التركيز</span>
+                    </div>
+                    <div class="project-details">
+                        <h3>مؤقت التركيز الذكي (Pomodoro)</h3>
+                        <p>مؤقت عمل تفاعلي مدمج بوضع الحظر للمشتتات مع إحصائيات فورية لجلسات التركيز.</p>
+                        <div class="project-tags">
+                            <span class="tag">Jetpack Compose</span>
+                            <span class="tag">CoreData</span>
+                            <span class="tag">AudioEngine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-preview">
+                        <i class="fa-solid fa-chart-line project-icon-lg"></i>
+                        <span class="project-badge">الإحصائيات</span>
+                    </div>
+                    <div class="project-details">
+                        <h3>نظام تقارير الأداء الأسبوعي</h3>
+                        <p>تحليلات رسومية تفاعلية توضح ساعات العمل ونسب إنجاز الأهداف مع نصائح ذكية للتحسين.</p>
+                        <div class="project-tags">
+                            <span class="tag">Charts API</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">AI Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section id="reviews" class="reviews-section">
+            <div class="section-header">
+                <span class="section-subtitle">ثقة عملائنا</span>
+                <h2 class="section-title">آراء وقصص نجاح مستخدمي إنجز</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-card-header">
+                        <div class="user-meta">
+                            <span class="user-name">أحمد محمد</span>
+                            <span class="user-role">مصمم واجهات مستخدم</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        لقد ساعدني تطبيق إنجز في تنظيم مهامي وتحسين معدل تركيزي اليومي بشكل ملحوظ. الواجهة الداكنة مريحة جداً وأسلوب العمل عليه ممتع للغاية.
+                    </p>
+                    <div class="review-date-footer">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>2026-06-14</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-card-header">
+                        <div class="user-meta">
+                            <span class="user-name">سارة عبد الرحمن</span>
+                            <span class="user-role">مطورة تطبيقات هواتف</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        تطبيق خفيف وممتاز. مؤقت بومودورو المدمج ساعدني كثيراً في الفصل بين فترات العمل الطويلة وفترات الراحة القصيرة دون تشتت.
+                    </p>
+                    <div class="review-date-footer">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>2026-06-12</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-card-header">
+                        <div class="user-meta">
+                            <span class="user-name">خالد العتيبي</span>
+                            <span class="user-role">كاتب ومترجم مستقل</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        التقارير اليومية والأسبوعية تعطيني صورة واضحة جداً عن مستوى إنجازي ونقاط ضعفي. تطبيق رائع ومرتب وأنصح به الجميع.
+                    </p>
+                    <div class="review-date-footer">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>2026-06-10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo-wrapper">
+                    <img src="logo.png" alt="شعار إنجز" class="footer-logo">
+                    <span class="footer-title">إنجز</span>
+                </div>
+                <p class="footer-desc">نظم وقتك بذكاء وضاعف تركيزك. خيارك الأمثل لزيادة الإنتاجية وإنجاز المهام بكفاءة متناهية.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#features">المميزات</a></li>
+                    <li><a href="#projects">مشاريع التطبيق</a></li>
+                    <li><a href="#reviews">آراء المستخدمين</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>تواصل معنا</h3>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="mailto:info@engzapp.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
         </div>
-        <div class="customer-reviews">
-            <h5>اراء العملاء</h5>
-            <div class="review1">
-                <div class="review-header">
-                    <span class="review-author">Ahmed Mohamed</span>
-                    <span class="review-date">2026-06-14</span>
-                </div>
-                <p class="review-text">
-                    لقد ساعدني التطبيق في تنظيم يومي وتحسين تركيزي. واجهته أنيقة وسهلة الاستخدام.
-                </p>
-            </div>
-            <div class="review2">
-                <div class="review-header">
-                    <span class="review-author">Ahmed Mohamed</span>
-                    <span class="review-date">2026-06-14</span>
-                </div>
-                <p class="review-text">
-                    لقد ساعدني التطبيق في تنظيم يومي وتحسين تركيزي. واجهته أنيقة وسهلة الاستخدام.
-                </p>
-            </div>
-            <div class="review3">
-                <div class="review-header">
-                    <span class="review-author">Ahmed Mohamed</span>
-                    <span class="review-date">2026-06-14</span>
-                </div>
-                <p class="review-text">
-                    لقد ساعدني التطبيق في تنظيم يومي وتحسين تركيزي. واجهته أنيقة وسهلة الاستخدام.
-                </p>
-            </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 تطبيق إنجز. جميع الحقوق محفوظة.</p>
         </div>
+    </footer>
 
-    </div>
+    <!-- Interactive JS for Mobile Navbar Toggle -->
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Toggle Mobile Menu
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = navToggle.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.className = 'fas fa-times';
+            } else {
+                icon.className = 'fas fa-bars';
+            }
+        });
+
+        // Close Menu when clicking any link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.querySelector('i').className = 'fas fa-bars';
+                
+                // Set active link visually
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Intersection Observer to highlight active section in Navbar while scrolling
+        const sections = document.querySelectorAll('section');
+        const navObserverOptions = {
+            root: null,
+            threshold: 0.3,
+            rootMargin: "0px"
+        };
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        } else {
+                            link.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        }, navObserverOptions);
+
+        sections.forEach(section => {
+            navObserver.observe(section);
+        });
+    </script>
 </body>
 
 </html>
