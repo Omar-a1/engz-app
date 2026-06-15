@@ -366,7 +366,9 @@
             });
         }, navObserverOptions);
 
-
+        sections.forEach(section => {
+            navObserver.observe(section);
+        });
     </script>
 </body>
 
