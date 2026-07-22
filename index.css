@@ -52,6 +52,7 @@ body {
     font-family: var(--font-arabic);
     line-height: 1.6;
     overflow-x: hidden;
+    
 }
 
 /* Material Symbols Rounded Styling */
@@ -971,9 +972,9 @@ section {
 
 /* Demo Version Indicators */
 .demo-badge {
-    background: rgba(239, 68, 68, 0.12);
-    color: #f87171;
-    border: 1px solid rgba(239, 68, 68, 0.3);
+    background: rgba(34, 197, 94, 0.12);
+    color: var(--primary-accent);
+    border: 1px solid rgba(34, 197, 94, 0.3);
     font-size: 0.68rem;
     font-weight: 700;
     padding: 2px 8px;
@@ -982,5 +983,195 @@ section {
     display: inline-block;
     vertical-align: middle;
 }
+
+/* Global Corporate Ecosystem Top Bar */
+.global-ecosystem-bar {
+    background: linear-gradient(90deg, #0f172a 0%, #1e1b4b 50%, #064e3b 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 24px;
+    font-size: 0.85rem;
+    position: relative;
+    z-index: 1001;
+}
+
+.ecosystem-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ecosystem-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eco-badge {
+    background: linear-gradient(135deg, #3b82f6, #10b981);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.72rem;
+    padding: 3px 9px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.eco-title {
+    color: #e2e8f0;
+    font-weight: 600;
+}
+
+.ecosystem-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.eco-link {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+}
+
+.eco-link:hover, .eco-link.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Ecosystem Apps Showcase Section */
+.ecosystem-section {
+    padding: 80px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ecosystem-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.eco-app-card {
+    background: rgba(17, 24, 35, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    position: relative;
+    backdrop-filter: blur(12px);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.eco-app-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-accent);
+    box-shadow: 0 20px 40px rgba(34, 197, 94, 0.15);
+}
+
+.eco-app-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--primary-accent);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.eco-app-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.eco-app-card h3 {
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.eco-app-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.eco-app-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.eco-app-features span {
+    color: #cbd5e1;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eco-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary-eco {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary-eco:hover {
+    background: linear-gradient(135deg, #34d399, #10b981);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn-secondary-eco {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.btn-secondary-eco:hover {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
 
 

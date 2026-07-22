@@ -11,6 +11,9 @@
     <meta name="keywords" content="تنظيم الوقت, زيادة التركيز, إنتاجية, بومودورو, إدارة المهام, تطبيق إنجز, portfolio">
     <meta name="author" content="ENGZ Team">
     <meta name="google-site-verification" content="boPl-ZgmIbMQPQSdK23AOmAKdVpXt9VeDDMsTyRbxnU" />
+    <meta property="og:title" content="تطبيق إنجز - نظم وقتك بذكاء" />
+    <meta property="og:description" content="تطبيق متكامل لمساعدتك على تنظيم المهام وزيادة التركيز وتقارير الأداء." />
+    <meta property="og:image" content="https://engz-app.vercel.app/logo.png" />
     
 
     <!-- Google Fonts: Cairo (Arabic) & Poppins (English) -->
@@ -35,16 +38,17 @@
             <div class="nav-brand">
                 <img src="logo.png" alt="شعار إنجز" class="nav-logo">
                 <span class="nav-title">إنجز</span>
-                <span class="demo-badge">نسخة تجريبية</span>
+                <span class="demo-badge">منظومة موحدة</span>
             </div>
             <nav class="nav-menu" id="navMenu">
                 <a href="#hero" class="nav-link active"><span class="material-symbols-rounded">home</span>الرئيسية</a>
+                <a href="#ecosystem" class="nav-link"><span class="material-symbols-rounded">apps</span>تطبيقات المنظومة</a>
                 <a href="#features" class="nav-link">المميزات</a>
-                <a href="#projects" class="nav-link">مشاريع التطبيق</a>
-                <a href="#reviews" class="nav-link">آراء المستخدمين</a>
+                <a href="../to do list/index.html" class="nav-link" target="_blank"><span class="material-symbols-rounded">task_alt</span>المهام</a>
+                <a href="../calc-project/index.html" class="nav-link" target="_blank"><span class="material-symbols-rounded">calculate</span>الحاسبة</a>
             </nav>
             <div class="nav-cta">
-                <a href="#hero" class="cta-btn" id="navbarCtaBtn">تحميل الآن</a>
+                <a href="#hero" class="cta-btn" id="navbarCtaBtn">تحميل التطبيق</a>
             </div>
             <!-- Mobile Menu Toggle Button -->
             <button class="nav-toggle" id="navToggle" aria-label="فتح قائمة التنقل">
@@ -102,6 +106,49 @@
                             <i class="fas fa-download text-primary"></i>
                             <span>+10K تحميل</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Web Apps Showcase Section -->
+        <section id="ecosystem" class="ecosystem-section">
+            <div class="section-header">
+                <span class="section-subtitle">منظومة تطبيقات إنجز الذكية</span>
+                <h2 class="section-title">أدوات إنتاجية متكاملة في مكان واحد</h2>
+                <p class="section-desc">مجموعة تطبيقات الويب التفاعلية المصممة لمساعدتك على إدارة المهام اليومية وإجراء الحسابات الدقيقة بسهولة وسرعة.</p>
+            </div>
+
+            <div class="ecosystem-cards-grid">
+                <!-- App 1: To Do List -->
+                <div class="eco-app-card">
+                    <div class="eco-app-badge"><i class="fa-solid fa-list-check"></i> تطبيق المهام</div>
+                    <div class="eco-app-icon">📝</div>
+                    <h3>قائمة المهام اليومية (ENGZ Tasks)</h3>
+                    <p>تطبيق إدارة المهام الذكي المزود بحفظ تلقائي للبيانات، دعم الوضع المظلم، وتتبع حالة الإنجاز والتعديل السريع.</p>
+                    <div class="eco-app-features">
+                        <span><i class="fa-solid fa-check text-primary"></i> حفظ محلي سريع</span>
+                        <span><i class="fa-solid fa-check text-primary"></i> تعديل وحذف فوري</span>
+                        <span><i class="fa-solid fa-check text-primary"></i> تواريخ دقيقة للمهام</span>
+                    </div>
+                    <div class="eco-app-actions">
+                        <a href="../to do list/index.html" class="eco-btn btn-primary-eco" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> تشغيل تطبيق المهام</a>
+                    </div>
+                </div>
+
+                <!-- App 2: Calculator -->
+                <div class="eco-app-card">
+                    <div class="eco-app-badge"><i class="fa-solid fa-calculator"></i> الحاسبة الذكية</div>
+                    <div class="eco-app-icon">🧮</div>
+                    <h3>الحاسبة المتطورة (ENGZ Calc)</h3>
+                    <p>حاسبة ويب قياسية بنمط Windows المتطور مع دعم كامل للعمليات الحسابية المتراكمة، الذاكرة، والتحويل بين العربية والإنجليزية.</p>
+                    <div class="eco-app-features">
+                        <span><i class="fa-solid fa-check text-primary"></i> وضع قياسي متطور</span>
+                        <span><i class="fa-solid fa-check text-primary"></i> دعم ثنائي اللغة (AR/EN)</span>
+                        <span><i class="fa-solid fa-check text-primary"></i> ذاكرة حسابية وتأثيرات مضيئة</span>
+                    </div>
+                    <div class="eco-app-actions">
+                        <a href="../calc-project/index.html" class="eco-btn btn-secondary-eco" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> تشغيل الحاسبة الذكية</a>
                     </div>
                 </div>
             </div>
@@ -313,8 +360,8 @@
                 <h3>تواصل معنا</h3>
                 <div class="social-links">
                     <a href="https://github.com/Omar-a1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/3oomar_abdallah/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="http://x.com/Omarabdall43573" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/3oomar_abdallah/" target="_blank" rel="noopener noreferrer" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://x.com/Omarabdall43573" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="mailto:omarabdallahx171@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
