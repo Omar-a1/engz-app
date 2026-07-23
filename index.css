@@ -31,8 +31,8 @@
     --font-arabic: 'Cairo', 'Rubik', sans-serif;
     --font-english: 'Poppins', sans-serif;
     
-    /* التوقيتات والانتقالات */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* التوقيتات والانتقالات - محسّنة لأعلى أداء فريمات */
+    --transition-smooth: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ==========================================
@@ -104,6 +104,7 @@ section {
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition-smooth);
+    transform: translateZ(0);
 }
 
 .nav-container {
@@ -443,6 +444,7 @@ section {
     text-align: right;
     position: relative;
     overflow: hidden;
+    transform: translateZ(0);
 }
 
 /* تدرج علوي للحدود عند التمرير */
@@ -521,6 +523,7 @@ section {
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
+    transform: translateZ(0);
 }
 
 .project-card:hover {
@@ -623,6 +626,7 @@ section {
     justify-content: space-between;
     gap: 20px;
     text-align: right;
+    transform: translateZ(0);
 }
 
 .review-card:hover {
@@ -1065,16 +1069,17 @@ section {
 }
 
 .eco-app-card {
-    background: rgba(17, 24, 35, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--bg-dark-soft);
+    border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 32px;
     position: relative;
-    backdrop-filter: blur(12px);
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .eco-app-card:hover {
